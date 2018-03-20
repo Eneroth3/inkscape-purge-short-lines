@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <_name>Purge Short Edges</_name>
+  <id>eneroth.purge.short_edges</id>
+  <dependency type="executable" location="extensions">eneroth_purge_short_edges.py</dependency>
+  <dependency type="executable" location="extensions">inkex.py</dependency>
+  <param name="length" type="float" min="0" max="100" _gui-text="Minimum Allowed Path Length">10</param>
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+       <submenu _name="Purge"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command reldir="extensions" interpreter="python">eneroth_purge_short_edges.py</command>
+  </script>
+</inkscape-extension>
